@@ -1,0 +1,35 @@
+* {
+    color: green;
+}
+
+li {
+    color: orange;
+}
+
+#guitar {
+    color: red;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+button:hover {
+    color: blue;
+    background: grey;
+}
+
+a[href="https://www.daum.net"]{
+    color: rgb(112,140,220);
+}
+a[href^="https://www.goo"]{
+    color: black;
+}
+a[href$="googledaum.net"]{
+    color: rgb(222,40,160);
+} 
+/* 
+같은 경로에 2가지 이상의 세션이 걸려있으면 마지막 세션이 적용된다. 
+*/

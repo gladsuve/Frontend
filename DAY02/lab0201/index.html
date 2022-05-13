@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- 
+        1. 주석처리 : 코딩에 영향을 주지 않는 부분
+        어떤 내용이나 기능에 대해 설명하는 역할
+        2. html, css, javascript 이해
+            html : 맨얼굴(민낯)
+            css(cascading style sheet) : 화장(makeup)
+            JavaScript : 동적으로 데이터나 DOM을 처리하는 녀석
+        3. DOM(Document Object Model)
+            문서 객체 모텔
+            검색엔진(SED)에 잘 적용되기 위해서 만들어진 문서
+            문서 자체가 트리 구조를 가지고 구현되어 있고,
+            그 문서안에 의미있게(semantic) 구성
+        4. html의 동작
+            Liveserver을 동작 시키지 않아도
+            그냥 html파일을 더블클릭하면 동작이 된다.
+        5. DOM구조의 기본
+            <html>
+                <head></head>
+                <body></body>
+            </html>
+        6. 웹동작방식
+            Frontend : html/css/javascript UI
+            backend : UI, UX, 데이터 + 로직
+            Index.jsp -> httpd -> servlet -> java bean -> DB
+                         <-       <-       <-      <-
+     -->
+        <!-- 10. css
+            html의 화면을 이쁘게 만들어주는 역할
+            css3는 2D or 3D도 만들 수 있다.
+            css3는 animation도 가능하다.
+            정해진 태그나 클래스에 스타일을 입힐 때 사용한다. 
+
+         -->
+     <style>
+         div {
+             color : #4db6ac;
+         }
+     </style>
+     <!-- <link rel="stylesheet" href="style.css"> -->
+<head>
+</head>
+
+<body>
+    <!-- <P> :  한 단락 아래로 -->
+   <p>Another in the Fire!</p>
+   <p>
+       안녕 오늘 좋은 아침이야
+   </p>
+   <!-- <br> : 리턴해서 한 문장 아래로 -->
+   안녕 오늘 좋은 아침이야<br>
+   안녕 오늘 좋은 아침이야<br> 
+   <!-- h1 ~ h5 : 글씨 크기에 따른 태그 적용 -->
+   <h1>배고파</h1>
+   <h2>배고파</h2>
+   <h3>배고파</h3>
+   <h4>배고파</h4>
+   <h5>배고파</h5>
+   <!-- 7.element(엘리먼트)
+    start tag + content + end tag     
+-->
+   <h5>배고파</h5>
+
+   <!-- 8. div 태그 
+    html이나  javascript에서 가장 많이 사용하는 태그
+    span 태그도 사용되지만 span은 span 태그 안에 sapn을 사용하면
+    적응이 안된다. 형태를 가로 X 세로의 형태로 사용된다.
+    -->
+   <div>가장 많이 사용하는 태그</div>
+   <!-- 9. span 태그
+    필요할 때 그 부분만 적용할 때 사용하는 태그
+    -->
+    <span> 필요할 때 그 부분만 적용할 때 사용하는 태그</span>
+</body>
+</html>
