@@ -1,0 +1,118 @@
+/* 
+1. 필요없는 속성들을 초기화
+*/
+
+html, body {
+    margin : 0;
+    padding : 0;
+}
+
+/* 
+2. h태그와 p태그는 기본적으로 위아래 
+margin을 가지고 있음
+margin 초기화
+*/
+
+h1, p {
+    margin : 0;
+}
+
+/* 
+3. 배경 추가
+반복 제거를 위한 no-repeat
+
+vw,vh와 %의 차이점
+vw, vh는 가로 세로 현재 가지고 있는 최대치
+%는 margin,... 다 빼고 100%가 되기 때문에
+정확하게 전체를 다 사용할 경우에는 vw, vh를 사용
+*/
+#main {
+    background: url(back2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width : 100vw;
+    height : 100vh;
+
+    /* 구글폰트 적용 */
+    font-family: 'Questrial', sans-serif;
+}
+
+/* 
+4. 컨텐츠의 텍스트의 색상을 흰색으로 변경
+*/
+
+#contents {
+    color: white;
+    /* 절대적 좌표로 지정 */
+    position : absolute;
+    width : 100%;
+    /* 이렇게만 주게되면 시작 지점이 50%일 뿐
+    Element가 50% 지점으로 오는 것이 아님 */
+    top : 50%;
+    /* 요소 자체를 중앙으로 */
+    transform: translateY(-50%);
+    /* 텍스트 중앙 위치 */
+    text-align: center;
+}
+
+/* 
+5. a태그 속성 정의
+*/
+
+a {
+    /* 부모로부터 상속된 값 적용 */
+    color: inherit;
+    /* 링크 표시 삭제 */
+    text-decoration: none;
+}
+
+/* 
+6. 구글 폰트 사용
+*/
+
+#contents h1 {
+    font-family : "dancing script", cursive;
+    font-size : 70px;
+    margin : 16px;
+}
+
+#contents p {
+    /* 폰트 사이즈 적용 */
+    font-size : 23px;
+
+    margin-bottom: 16px;
+}
+
+#contents a {
+    display: inline-block;
+    /* 직사각형 테두리 생성 */
+    border : 2px solid white;
+    padding : 10px 20px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.5s;
+
+}
+
+/* 
+마우스가 올라가면 색상 변경
+*/
+#contents a:hover {
+    background-color: grey;
+}
+
+/* 
+미디어 쿼리 작성
+*/
+@media(max-width : 770px) {
+    #contents h1 {
+        font-size: 50px;
+    }
+    #contents p {
+        font-size: 20px;
+    }
+    #contents a {
+        font-size: 12px;
+    }
+}
