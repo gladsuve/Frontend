@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="view"></p>
+    <script>
+        window.onload = function(){
+            // 1) XML
+            const req = new XMLHttpRequest();
+            // 2) 통신할 때 사용할 처리법 등록
+           req.addEventListener("load", function(){
+               document.getElementById("view").innerHTML = req.responseText;
+           })
+            // 3) 요청 전송, 통신 시작
+            req.open("GET", "data.txt");
+            req.send(null);
+        }
+    </script>
+</body>
+</html>
