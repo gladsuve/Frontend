@@ -15,7 +15,7 @@ FormView.setup = function(element){
     this.showResetBtn(false);
 }
 FormView.showResetBtn = function(show){
-    this.resetElement.display = show? 'block' : 'none';
+    this.resetElement.display = show?'block' : 'none';
 }
 
 
